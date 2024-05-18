@@ -32,7 +32,10 @@ Este aplicativo simula o envio de dados de peso para uma porta serial, útil par
 
 ## Uso
 
-1. Execute o script:
+1. É necessário ter ao menos uma porta COM disponível. Se a máquina que estiver rodando não possuir portas COM, podem ser utilizados sistemas de criam portas COM virtuais, como o Free Virtual Serial Ports, por exemplo.
+
+
+2. Execute o script:
 
     ```bash
     python simulador_balanca.py
