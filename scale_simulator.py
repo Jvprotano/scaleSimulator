@@ -77,7 +77,10 @@ porta_label.grid(row=1, column=0)
 
 portas_disponiveis = [porta.device for porta in list_ports.comports()]
 porta_var = tk.StringVar(root)
-porta_var.set(portas_disponiveis[0])  
+
+if  (len(portas_disponiveis) > 0):
+    porta_var.set(portas_disponiveis[0])
+else: portas_disponiveis = ["Não há portas disponíveis"]  
 
 porta_dropdown = tk.OptionMenu(root, porta_var, *portas_disponiveis)
 porta_dropdown.grid(row=1, column=1)
